@@ -52,7 +52,7 @@ const Api = {
 	postMsgoUrl() {
 		if (this.env() === "development") {
 			let arr = window.location.origin.split(":");
-			return `${arr[0]}:${arr[1]}:5000`
+			return `${arr[0]}:${arr[1]}:8080`
 		}
 		return window.location.origin + "/form-design"
 	},
